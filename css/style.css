@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+:root {
+    --header-text-size : 25px;
+    --header-font-weight : 900;
+    --medium-text-size : 20px;
+    --regular-text-size : 13px;
+    --regular-text-weight : 500;
+    --black-text-color : #000;
+    --muted-font-color : #6e6e6e;
+    --original-text-color : #fff;
+    --link-text-color : #00f;
+    --percentage-color : #0f0;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background: #e6ecfa;
+}
+
+.channel-dashboard {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.nav-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-items-group {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-item {
+    background: var(--original-text-color);
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.dashboard-section {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    padding: 20px;
+    padding-left: 0px;
+}
+
+/*Latest Section*/
+
+.latest-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    height: 100%;
+    padding: 20px;
+    background: var(--original-text-color);
+}
+
+.latest-card-header {
+    margin-bottom: 10px;
+    font-size: var(--medium-text-size);
+    font-weight: var(--regular-text-weight);
+    text-transform: capitalize;
+}
+
+.msquare-img {
+    width: 100%;
+    position: relative;
+}
+
+.img-text {
+    position: absolute;
+    top: 260px;
+    font-size: var(--regular-text-size);
+    font-weight: var(--regular-text-weight);
+    color: var(--original-text-color);
+    width: 270px;
+    padding: 10px;
+}
+
+.muted-header {
+    font-size: var(--regular-text-size);
+    font-weight: var(--regular-text-weight);
+    color: var(--muted-font-color);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 290px;
+}
+
+.latest-views-list {
+    list-style: none;
+}
+
+.latest-view-list-items {
+    display: flex;
+    justify-content: space-between;
+    text-transform: capitalize;
+    margin-bottom: 15px;
+    font-size: var(--regular-text-size);
+    color: var(--black-text-color);
+}
+
+.greater-icon {
+    padding-right: 9px;
+}
+
+.icon {
+    font-size: 10px;
+    font-weight: var(--header-font-weight);
+    margin-left: 12px;
+}
+
+.green-up {
+    height: 20px;
+    font-weight: 900;
+    background: var(--percentage-color);
+    color: var(--original-text-color);
+    margin-left: 10px;
+    border-radius: 50%;
+    width: 20px;
+    line-height: 20px;
+    text-align: center;
+}
+
+.fa-check {
+    background: var(--original-text-color);
+    border: 1px solid var(--percentage-color);
+    color: var(--percentage-color);
+    font-size: 14px;
+}
+
+.link-latest {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.link {
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: var(--regular-text-weight);
+    text-transform: uppercase;
+    color: var(--link-text-color);
+}
+
+/*News Section*/
+
+
+/*Analytics Section*/
