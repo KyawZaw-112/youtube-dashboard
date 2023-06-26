@@ -24,6 +24,7 @@ body {
     height: 100vh;
     width: 100vw;
     background: #e6ecfa;
+    overflow-x: hidden;
 }
 
 .channel-dashboard {
@@ -57,6 +58,7 @@ body {
     padding-left: 0px;
 }
 
+
 /*Latest Section*/
 
 .latest-div {
@@ -66,6 +68,10 @@ body {
     align-items: center;
     align-content: center;
     height: 100%;
+    gap: 10px;
+}
+
+.latest-video {
     padding: 20px;
     background: var(--original-text-color);
 }
@@ -140,6 +146,7 @@ body {
     background: var(--original-text-color);
     border: 1px solid var(--percentage-color);
     color: var(--percentage-color);
+    text-align: center;
     font-size: 14px;
 }
 
@@ -157,7 +164,69 @@ body {
     color: var(--link-text-color);
 }
 
+.latest-comments {
+    padding: 20px;
+    background: var(--original-text-color);
+    width: 360px;
+}
+
+.comment-profile {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.comment-card {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.profile-section {
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.comment {
+    padding-left: 35px;
+    font-weight: var(--regular-text-weight);
+    color: var(--black-text-color);
+}
+
+.image {
+    width: 80px;
+    height: 50px;
+}
+
 /*News Section*/
+
+.news-div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.news {
+    padding: 20px;
+    background: var(--original-text-color);
+    width: 360px;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.news-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.news-icon {
+    display: flex;
+    gap: 40px;
+}
 
 
 /*Analytics Section*/
